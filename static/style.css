@@ -1,0 +1,45 @@
+
+
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+    user-select: none;
+   
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+   }
+   
+   .center {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+
+/* Thick red border */
+hr {
+  border: 1px solid black;
+}
+
+body {
+				min-height: 75rem;
+    padding-top: 4.5rem;
+   }
+   
+  
+
+
+
+
+
+
+   
+   
