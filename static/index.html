@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Balloon?</title>
+		<title>Shape detector</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Use the power of Machine Learning to diagnose TB from chest x-rays.">
 
@@ -12,12 +12,12 @@
 			<link rel="stylesheet" type="text/css" href="styles.css">
 		
 	</head>
-	<body class="bg-danger">
+	<body>
 		<!--navigation links-->
 		
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<!--.navbar-brand for your company, product, or project name.-->
-			<a class="navbar-brand" href="/index.html">Balloon Detector</a>
+			<a class="navbar-brand" href="/index.html">Shape Detector</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -37,7 +37,8 @@
 			<!--GIF-->
 			<div class="row justify-content-md-center"><p></p></div>
 			<div class="row justify-content-md-center">
-			<iframe src="https://giphy.com/embed/bcKmIWkUMCjVm" width="480" height="349" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animated-hello-waving-bcKmIWkUMCjVm">via GIPHY</a></p>
+				<iframe src="https://giphy.com/embed/3o7buaucmSsxQf1pZK" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/loop-infinite-geometry-3o7buaucmSsxQf1pZK"></a></p>
+		
 			</div>
 			<!--prograss bar-->
 			<div class="row ">
@@ -46,6 +47,13 @@
 				</div>
 			</div>
 			<!--choose file and Predict-->
+
+			<div class="row">
+				<h2>About shape detector</h2>
+			</div>
+			<div class="row"><p>
+				Use neural netwoek to detect what shape is the the image.
+			</p></div>
 			<div class="row">
 				<div class="col-6">
 					<input id="image-selector" class="form-control border-0"  type="file">
@@ -55,13 +63,14 @@
 				</div>
 			</div>
 			<hr/>
+			
 			<div class="row">
 				<div class="col-6">
 					<h2 class="ml-3">Image</h2>
 					<img id="selected-image" class="ml-3" width="250" alt=""> 
 				</div>
 				<div class="col-6">
-					<h2 class="ml-3">Predictions</h2>
+					<h2 class="ml-3">The shape is:</h2>
 					<ol id="prediction-list"></ol>
 				</div>
 			</div>
