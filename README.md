@@ -17,10 +17,10 @@ $ node server.js
 
 ## About
 
-Project for silly Hacks 2020 hackton </br>
+Project made for silly Hacks hackton 2020.</br>
 Detects what shape is in the image between a circle,square,triangle and star.</br>
 Using:
-1. neural network made with keras and convoreted to TensorFlow.js
+1. neural network made with keras and converted to json using TensorFlow.js
 2. Html
 3. CSS
 4. Node.js
