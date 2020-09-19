@@ -1,2 +1,4 @@
-Normal
-Tuberculosis
+circle
+squrare
+star
+triangle

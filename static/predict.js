@@ -19,7 +19,7 @@ $( document ).ready(async function () {
 	modelLoaded = false;
 	$('.progress-bar').show();
     console.log( "Loading model..." );
-    model = await tf.loadLayersModel("model/model.js");
+    model = await tf.loadLayersModel('model/model.json');
     console.log( "Model loaded." );
 	$('.progress-bar').hide();
 	modelLoaded = true;
@@ -37,7 +37,7 @@ $("#predict-button").click(async function () {
 		.resizeNearestNeighbor([64, 64]) // change the image size
 		.expandDims()
 		.toFloat()
-		.reverse(-1); // RGB -> BGR
+		//.reverse(-1); // RGB -> BGR
 	let predictions = await model.predict(tensor).data();
 	console.log(predictions);
 	let top5 = Array.from(predictions)
@@ -48,7 +48,7 @@ $("#predict-button").click(async function () {
 			};
 		}).sort(function (a, b) {
 			return b.probability - a.probability;
-		}).slice(0, 2);
+		}).slice(0, 4);
 
 	$("#prediction-list").empty();
 	top5.forEach(function (p) {
